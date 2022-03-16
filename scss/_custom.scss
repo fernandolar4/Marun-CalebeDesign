@@ -9,6 +9,13 @@ $orange: #E27B01;
 $primary: $red;
 $secondary: $orange;
 
+$position-values: (
+  0: 0,
+  10: 10%,
+  50: 50%,
+  100: 100%
+);
+
 //IMPORTANDO BOOTSTRAP 
 
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
