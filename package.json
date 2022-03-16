@@ -1,0 +1,30 @@
+{
+  "name": "marun-calebedesign",
+  "version": "1.0.0",
+  "description": "Teste para Vaga de Desenvolvedor Front-End Jr promovido pela Calebe Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandolar4/Marun-CalebeDesign.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "sass",
+    "cabeledesign"
+  ],
+  "author": "Fernando Antonio Lara Maia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandolar4/Marun-CalebeDesign/issues"
+  },
+  "homepage": "https://github.com/fernandolar4/Marun-CalebeDesign#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
