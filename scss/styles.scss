@@ -1,17 +1,17 @@
 @use'custom';
 
+//IMPORTANDO OS COMPONENTES
 
-$font-stack: Helvetica, sans-serif;
-$primary-color: #b83d24;
-$secondary-color: black;
-$quad-color: white;
+@use'components/buttons';
+@use'components/typography';
+
+//IMPORTANDO AS SECTIONS
+@use'sections/navbar';
+@use'sections/intro';
+@use'sections/content';
+@use'sections/social';
+@use'sections/information';
+@use'sections/map';
+@use'sections/footer';
 
 
-
-body
-    {font: 100% $font-stack;
-    color: $primary-color;
-    h1
-       { color: red;
-        background-color: $secondary-color;
-    };}
