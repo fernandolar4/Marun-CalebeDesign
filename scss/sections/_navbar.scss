@@ -1,0 +1,42 @@
+@use'../custom' as *;
+
+header{
+    background-color: $primary;
+
+    #menu{
+        max-width: 2000px;
+        margin: auto;
+        padding: 1rem 2rem 2rem 1rem;
+        #logo{ 
+            position: absolute;
+            top: 15%;
+            left: 10%;
+
+            @media (max-width: 991px){
+                position: relative;
+                top: 0%;
+                left: 0%;
+        }
+    }
+        li{
+            color: white;
+            margin-right: 2rem;
+            font-size: 18px;
+        }
+        img{
+            max-width: 275px;
+        }
+        a{
+            color: white;
+            font-weight:400;
+        }
+        a:hover{
+            transition: 0.5s;
+            color: $secondary;
+            font-weight: 800;
+        }
+        #iconeInsta{
+            margin-right: 1rem; 
+        }
+    }
+}
