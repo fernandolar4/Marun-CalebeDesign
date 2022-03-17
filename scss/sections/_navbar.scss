@@ -7,10 +7,14 @@ header{
         max-width: 2000px;
         margin: auto;
         padding: 1rem 2rem 2rem 1rem;
+
+        
         #logo{ 
             position: absolute;
             top: 15%;
             left: 10%;
+            max-width: 275px;
+            
 
             @media (max-width: 991px){
                 position: relative;
@@ -18,25 +22,34 @@ header{
                 left: 0%;
         }
     }
+    ul{
+        display: flex;
+        align-items: flex-end;
+        
         li{
+            
             color: white;
             margin-right: 2rem;
             font-size: 18px;
-        }
-        img{
-            max-width: 275px;
-        }
-        a{
-            color: white;
-            font-weight:400;
-        }
-        a:hover{
-            transition: 0.5s;
-            color: $secondary;
-            font-weight: 800;
+       
+            a{
+                color: white;
+                font-weight:400;
+                img:hover{
+                    color: $secondary;
+                   
+                }
+            }
+            a:hover{
+                transition: 0.5s;
+                color: $secondary;
+                font-weight: 800;
+            }
         }
         #iconeInsta{
-            margin-right: 1rem; 
+            margin-right: 0.5rem; 
         }
     }
+    
+}
 }
