@@ -11178,11 +11178,14 @@ header #menu ul li a:hover {
   color: #E27B01;
   font-weight: 800;
 }
-header #menu ul #iconeInsta {
-  margin-right: 0.5rem;
+@media (min-width: 991px) {
+  header #menu ul #iconeInsta {
+    margin-right: 0.5rem;
+  }
 }
 
 .intro-section {
+  margin-top: 13vh;
   height: 90vh;
   background-color: #b83d24;
   background-image: url("../../images/pattern.png");
@@ -11195,6 +11198,7 @@ header #menu ul #iconeInsta {
   background-image: url("../../images/espaço.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 75vh;
   width: 100%;
   color: white;
@@ -11213,6 +11217,32 @@ header #menu ul #iconeInsta {
 }
 .intro-section div article h3 {
   font-size: 1.2rem;
+}
+
+.content {
+  height: 180vh;
+  background-color: white;
+}
+
+.socialCarrousel {
+  background-image: url("../../images/gold.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.information {
+  background-image: url("../../images/espaço2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+}
+
+.footer {
+  background-color: black;
+  height: 25vh;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
