@@ -6,7 +6,32 @@
     background-position: center;
     background-size: cover;
  
-
     height: 90vh;
+    @media (max-width: 991px){
+        height: 100%}
 
+
+    div{
+        background-color: rgba(184,61,36,0.8);
+        margin-left: 55vw;
+        width: 420px;
+        height: 100%;
+        padding: 2rem;
+
+        color: white;
+        font-weight: 400;
+        font-size:18px;
+        @media (max-width: 991px){
+            
+            width:100%;
+            margin: auto;
+        }
+        h2{
+            font-weight: 800;
+            font-size: 48px;
+        }
+        span{
+            color: $secondary;
+        }
+    }
 }

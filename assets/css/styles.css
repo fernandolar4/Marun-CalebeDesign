@@ -11141,6 +11141,7 @@ body {
 
 header {
   background-color: #b83d24;
+  height: 10vh;
 }
 header #menu {
   max-width: 2000px;
@@ -11188,11 +11189,16 @@ header #menu ul li a:hover {
   margin-top: 8vh;
   height: 90vh;
   background-color: #b83d24;
-  background-image: url("../../images/pattern.png");
   background-size: 512px;
   background-repeat: repeat;
   display: flex;
   align-items: center;
+}
+@media (max-width: 991px) {
+  .intro-section {
+    min-height: 90vh;
+    height: 100%;
+  }
 }
 .intro-section div {
   background-image: url("../../images/espaço.png");
@@ -11203,9 +11209,22 @@ header #menu ul li a:hover {
   width: 100%;
   color: white;
 }
+@media (max-width: 991px) {
+  .intro-section div {
+    height: 100%;
+  }
+}
 .intro-section div article {
   margin: 10% 0% 0% 25%;
   max-width: 500px;
+}
+@media (max-width: 991px) {
+  .intro-section div article {
+    width: 100%;
+    margin: auto;
+    margin-top: 12vh;
+    padding: 1rem;
+  }
 }
 .intro-section div article h2 {
   font-size: 4rem;
@@ -11239,28 +11258,52 @@ header #menu ul li a:hover {
   background-size: cover;
   height: 90vh;
 }
+@media (max-width: 991px) {
+  .information {
+    height: 100%;
+  }
+}
+.information div {
+  background-color: rgba(184, 61, 36, 0.8);
+  margin-left: 55vw;
+  width: 420px;
+  height: 100%;
+  padding: 2rem;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 991px) {
+  .information div {
+    width: 100%;
+    margin: auto;
+  }
+}
+.information div h2 {
+  font-weight: 800;
+  font-size: 48px;
+}
+.information div span {
+  color: #E27B01;
+}
 
 .map iframe {
   height: 500px;
 }
 
-.containerFooter {
-  height: 45vh;
-  background-image: url("../../images/pattern.png");
-  background-repeat: repeat;
-  background-position-y: top;
-  position: relative;
-}
-
-#footerMarun {
-  width: 100vw;
+.containerFooter #footerMarun {
+  width: 100%;
   height: 35vh;
   top: 3.5vh;
-  position: absolute;
   background-color: black;
   color: white;
 }
-#footerMarun div {
+@media (max-width: 991px) {
+  .containerFooter #footerMarun {
+    height: 100%;
+  }
+}
+.containerFooter #footerMarun div {
   max-width: 1800px;
   padding: 1rem;
   display: flex;
@@ -11270,27 +11313,35 @@ header #menu ul li a:hover {
   font-weight: 400;
   margin: 0 auto;
 }
-#footerMarun div .footerLogo {
+@media (max-width: 991px) {
+  .containerFooter #footerMarun div {
+    flex-direction: column;
+  }
+}
+.containerFooter #footerMarun div .footerLogo {
   width: 200px;
 }
-#footerMarun div .reserva {
+.containerFooter #footerMarun div .reserva {
   max-width: 15rem;
 }
-#footerMarun div span {
+.containerFooter #footerMarun div span {
   font-size: 18px;
   font-weight: 700;
 }
-#footerMarun div p a {
+.containerFooter #footerMarun div p a {
   font-weight: 700;
   color: #E27B01;
 }
-#footerMarun div .socialMidiaLink {
+.containerFooter #footerMarun div ul span {
+  margin-left: 1rem;
+}
+.containerFooter #footerMarun div ul .socialMidiaLink {
   background-color: #b83d24;
   padding: 1rem;
   margin: 1rem 1rem 1rem 0rem;
   border-radius: 50%;
 }
-#footerMarun div .socialMidiaLink img {
+.containerFooter #footerMarun div ul .socialMidiaLink img {
   height: 20px;
 }
 
