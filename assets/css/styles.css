@@ -11240,6 +11240,10 @@ header #menu ul li a:hover {
   height: 90vh;
 }
 
+.map iframe {
+  height: 500px;
+}
+
 .containerFooter {
   height: 45vh;
   background-image: url("../../images/pattern.png");
