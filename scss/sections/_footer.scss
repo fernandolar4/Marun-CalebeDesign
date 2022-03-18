@@ -1,8 +1,60 @@
 @use'../custom' as *;
 
-
-.footer{
-    background-color: black;
-    height: 25vh;
+.containerFooter{
+    height: 45vh;
+    background-image: url('../../images/pattern.png');
+    background-repeat:repeat;
+    background-position-y: top;
+    position: relative;
+}
+#footerMarun{
     width: 100vw;
+    height:35vh;
+    top: 3.5vh;
+    position: absolute;
+    background-color: black;
+    color: white;
+    
+    div{
+        max-width: 1800px;
+        padding: 1rem;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 auto;
+        .footerLogo{
+            width: 200px;
+        }
+        .reserva{
+            max-width: 15rem;
+        }
+        span{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        p{
+            a{
+                font-weight: 700;
+                color: $secondary;
+            }
+
+        }
+        .socialMidiaLink{
+
+            background-color: $primary;
+            padding: 1rem;
+            margin: 1rem 1rem 1rem 0rem;
+           
+            border-radius: 50%;
+            img{
+
+                height:20px;
+            }
+       
+        }
+
+    }
+   
 }
