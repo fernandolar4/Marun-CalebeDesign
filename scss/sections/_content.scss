@@ -6,14 +6,20 @@
     background-color: $white;
     display: flex;
     flex-direction: column;
-    padding: 2vh;
+    margin-bottom: 10vh;
    
     
 
-    section{
+    .chefe, .comida, .bebida{
         display: flex;
+        align-items: center;
         max-width: 70vw;
+
         margin: 0 auto;
+        margin-bottom: 5vh;
+        @media (max-width: 991px){
+            flex-direction: column;
+        }
      
     }
     article{
@@ -51,12 +57,53 @@
             height: 70vh;
         }
     }
+    
+    .comida{
+        display: flex;
+        flex-direction: column;
+    }
    
-    div{
-        padding: 1vh;
+    .gridComidas{
+       margin: 0.5vh auto;
         img{
-            width: 25vw;
+            width: 20vw;
+            @media (max-width: 991px){
+            width: 100%;
+            }
         }
     }
 
+    .bebida{
+     margin-bottom: 12vh;
+     margin: 0.5vh auto;
+
+
+        h2{
+            font-size: 48px;
+        }
+        article{
+            width:25vw;
+            @media (max-width: 991px){
+                margin: 0.5vh auto;
+                width: 100%
+            }
+        }
+    }
+
+    .gridBebidas{
+        margin: 1vh 1vh 1vh 1vh;
+         img{
+            width: 100%;
+            margin-top: 2vh;
+          
+         }
+     }
+    
+
+     .linha{
+        border: 1px solid rgba(0, 0, 0, 0.137);
+       width: 72vw;
+       margin: 1vh auto 1vh auto;
+       
+     }
 }

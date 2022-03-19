@@ -11245,12 +11245,19 @@ header #menu ul li a:hover {
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 2vh;
+  margin-bottom: 10vh;
 }
-.content section {
+.content .chefe, .content .comida, .content .bebida {
   display: flex;
+  align-items: center;
   max-width: 70vw;
   margin: 0 auto;
+  margin-bottom: 5vh;
+}
+@media (max-width: 991px) {
+  .content .chefe, .content .comida, .content .bebida {
+    flex-direction: column;
+  }
 }
 .content article {
   max-width: 50vw;
@@ -11282,11 +11289,48 @@ header #menu ul li a:hover {
 .content .chefe img {
   height: 70vh;
 }
-.content div {
-  padding: 1vh;
+.content .comida {
+  display: flex;
+  flex-direction: column;
 }
-.content div img {
+.content .gridComidas {
+  margin: 0.5vh auto;
+}
+.content .gridComidas img {
+  width: 20vw;
+}
+@media (max-width: 991px) {
+  .content .gridComidas img {
+    width: 100%;
+  }
+}
+.content .bebida {
+  margin-bottom: 12vh;
+  margin: 0.5vh auto;
+}
+.content .bebida h2 {
+  font-size: 48px;
+}
+.content .bebida article {
   width: 25vw;
+}
+@media (max-width: 991px) {
+  .content .bebida article {
+    margin: 0.5vh auto;
+    width: 100%;
+  }
+}
+.content .gridBebidas {
+  margin: 1vh 1vh 1vh 1vh;
+}
+.content .gridBebidas img {
+  width: 100%;
+  margin-top: 2vh;
+}
+.content .linha {
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  width: 72vw;
+  margin: 1vh auto 1vh auto;
 }
 
 .socialCarrousel {
