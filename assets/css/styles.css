@@ -11334,26 +11334,65 @@ header #menu ul li a:hover {
   margin: 1vh auto 1vh auto;
 }
 
-.socialCarrousel {
+.socialCarrouselContainer {
   background-image: url("../../images/gold.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   height: 90vh;
 }
-.socialCarrousel h3 {
+@media (max-width: 991px) {
+  .socialCarrouselContainer {
+    background-size: cover;
+    height: 100%;
+  }
+}
+.socialCarrouselContainer h3 {
   display: flex;
-  justify-content: center;
-  padding: 5vh;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5vh;
   font-size: 75px;
   font-weight: 800;
 }
-.socialCarrousel div {
+@media (max-width: 991px) {
+  .socialCarrouselContainer h3 {
+    font-size: 64px;
+  }
+}
+.socialCarrouselContainer .socialCarrouselBackground {
   margin-top: 10vh;
   width: 100%;
-  height: 45vh;
+  height: 52vh;
   background-image: url("../../images/pattern.png");
+  background-size: fit;
   background-repeat: repeat;
+}
+.socialCarrouselContainer .socialCarrousel {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 4.5vh;
+  align-items: center;
+  overflow: hidden;
+}
+.socialCarrouselContainer .socialCarrousel img {
+  min-width: 16.6666666667vw;
+  height: 41vh;
+}
+@media (max-width: 991px) {
+  .socialCarrouselContainer .socialCarrousel img {
+    min-width: 33.3333333333vw;
+  }
+}
+@media (max-width: 991px) {
+  .socialCarrouselContainer .socialCarrousel .hideable {
+    margin: 0 auto;
+    justify-content: center;
+    display: none;
+  }
 }
 
 .information {
