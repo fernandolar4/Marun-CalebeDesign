@@ -11153,6 +11153,14 @@ header {
 header #menu {
   padding: 1vh 10vh 0 0;
 }
+@media (max-width: 991px) {
+  header #menu {
+    padding: 0;
+  }
+  header #menu picture {
+    margin-left: 8vw;
+  }
+}
 header #menu #logo {
   position: absolute;
   top: 15%;
@@ -11230,7 +11238,7 @@ header #menu ul li a:hover {
   }
 }
 .intro-section .introLocal article {
-  margin: 10% 0% 0% 25%;
+  margin: 5% 0% 0% 25%;
   max-width: 500px;
 }
 @media (max-width: 991px) {
@@ -11467,10 +11475,20 @@ header #menu ul li a:hover {
 }
 
 .containerFooter {
+  position: relative;
   height: 45vh;
+  background-color: black;
+}
+@media (max-width: 991px) {
+  .containerFooter {
+    height: 110vh;
+  }
+}
+.containerFooter .footerPattern {
   background-image: url("../../images/patternD.png");
   background-repeat: repeat;
   position: relative;
+  height: 45vh;
 }
 .containerFooter #footerMarun {
   width: 100%;
@@ -11483,6 +11501,8 @@ header #menu ul li a:hover {
 @media (max-width: 991px) {
   .containerFooter #footerMarun {
     height: 100%;
+    background-color: black;
+    background-image: none;
   }
 }
 .containerFooter #footerMarun div {
