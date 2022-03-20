@@ -11157,9 +11157,6 @@ header #menu {
   header #menu {
     padding: 0;
   }
-  header #menu picture {
-    margin-left: 8vw;
-  }
 }
 header #menu #logo {
   position: absolute;
@@ -11172,6 +11169,7 @@ header #menu #logo {
     position: relative;
     top: 0%;
     left: 0%;
+    margin-left: 8vw;
   }
 }
 header #menu ul {
