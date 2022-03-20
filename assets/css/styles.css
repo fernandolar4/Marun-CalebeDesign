@@ -11412,10 +11412,6 @@ header #menu ul li a:hover {
 .socialCarrouselContainer .socialCarrousel a:hover span.filtroPrimary {
   display: block;
 }
-.socialCarrouselContainer .socialCarrousel a:hover span.filtroPrimary img {
-  margin-bottom: -35vh;
-  height: 15vh;
-}
 
 .information {
   background-image: url("../../images/espaço2.png");
