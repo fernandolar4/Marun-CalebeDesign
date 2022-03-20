@@ -3,15 +3,14 @@
 .socialCarrouselContainer{
     background-image: url('../../images/gold.png');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    height: 90vh;
+    height: 95vh;
 
 
     @media (max-width: 991px){
         background-size: cover;
    
-    height: 100%;
+
         
 
     }
@@ -61,7 +60,6 @@
        
                 @media (max-width: 991px) {
                     min-width: calc(100vw/3);
-              
                 }
               
             }
@@ -74,6 +72,39 @@
                 }
                 
           }
+
+        a:hover{
+            cursor: pointer;
+           
+        }  
+
+        .filtroPrimary{
+            background: rgba(184,61,36,0.5);
+            
+            display: none;
+            position: relative;
+
+            bottom: 41vh;
+            margin-bottom: -41vh;
+          
+            min-width: calc(100vw/6);
+            height:41vh;
+   
+            @media (max-width: 991px) {
+                min-width: calc(100vw/3);
+            }
+         
+            
+        }
+            a:hover span.filtroPrimary{
+                display:block;
+                img{
+                    margin-bottom: -35vh;
+                    height: 15vh;
+                }
+             
+    
+    }
     }
 
 }

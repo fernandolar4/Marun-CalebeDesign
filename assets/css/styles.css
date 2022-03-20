@@ -11337,14 +11337,12 @@ header #menu ul li a:hover {
 .socialCarrouselContainer {
   background-image: url("../../images/gold.png");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
+  height: 95vh;
 }
 @media (max-width: 991px) {
   .socialCarrouselContainer {
     background-size: cover;
-    height: 100%;
   }
 }
 .socialCarrouselContainer h3 {
@@ -11393,6 +11391,30 @@ header #menu ul li a:hover {
     justify-content: center;
     display: none;
   }
+}
+.socialCarrouselContainer .socialCarrousel a:hover {
+  cursor: pointer;
+}
+.socialCarrouselContainer .socialCarrousel .filtroPrimary {
+  background: rgba(184, 61, 36, 0.5);
+  display: none;
+  position: relative;
+  bottom: 41vh;
+  margin-bottom: -41vh;
+  min-width: 16.6666666667vw;
+  height: 41vh;
+}
+@media (max-width: 991px) {
+  .socialCarrouselContainer .socialCarrousel .filtroPrimary {
+    min-width: 33.3333333333vw;
+  }
+}
+.socialCarrouselContainer .socialCarrousel a:hover span.filtroPrimary {
+  display: block;
+}
+.socialCarrouselContainer .socialCarrousel a:hover span.filtroPrimary img {
+  margin-bottom: -35vh;
+  height: 15vh;
 }
 
 .information {
