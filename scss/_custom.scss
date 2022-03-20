@@ -17,8 +17,10 @@ $position-values: (
   100: 100%
   );
   body{
-   
     background-color: $primary;
+    section{
+      scroll-margin-top: 10vh;
+    }
   }
 //IMPORTANDO BOOTSTRAP 
 
