@@ -11291,6 +11291,7 @@ header #menu ul li a:hover {
 .content h2 {
   font-size: 64px;
   font-weight: 500;
+  word-break: break-all;
 }
 .content p {
   font-size: 18px;
@@ -11307,6 +11308,13 @@ header #menu ul li a:hover {
 }
 .content .chefe img {
   height: 70vh;
+}
+@media (max-width: 991px) {
+  .content .chefe img {
+    width: 70vw;
+    height: auto;
+    margin-bottom: 2vh;
+  }
 }
 .content .comida {
   display: flex;
@@ -11351,6 +11359,11 @@ header #menu ul li a:hover {
   border: 1px solid rgba(0, 0, 0, 0.137);
   width: 72vw;
   margin: 1vh auto 1vh auto;
+}
+@media (max-width: 991px) {
+  .content .linha {
+    margin-bottom: 4vh;
+  }
 }
 
 .socialCarrouselContainer {
