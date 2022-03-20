@@ -11283,6 +11283,11 @@ header #menu ul li a:hover {
   margin-top: 2vw;
   margin-left: 2vw;
 }
+@media (max-width: 991px) {
+  .content article {
+    max-width: 90vw;
+  }
+}
 .content h4 {
   color: #b83d24;
   letter-spacing: 2px;
@@ -11291,7 +11296,7 @@ header #menu ul li a:hover {
 .content h2 {
   font-size: 64px;
   font-weight: 500;
-  word-break: break-all;
+  word-break: break-word;
 }
 .content p {
   font-size: 18px;
